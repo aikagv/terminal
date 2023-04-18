@@ -1,4 +1,4 @@
-## <span style="color:28B5B1">Homework_1</span>
+## <span style="color:#28B5B1">Homework_1</span>
 ---
 ### 1. Check where am I:
 
@@ -75,7 +75,7 @@ drwxr-xr-x@  3 name  staff   96 Apr 15 23:40 folder_6
 ```
 ➜  folder_1 cat file_1.txt
 ```
-#### *type &circ; + C to  quit*
+#### *type &circ; ```+ C``` to  quit*
 
 ### 10. Write something in this file: 
 
