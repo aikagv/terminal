@@ -1,6 +1,6 @@
-## $${\color{#28B5B1}Homework}$$
----
-### 1. Check where am I:
+# $${\color{#28B5B1}Homework}$$
+
+### 1. Check where am I: 
 
 ```
 ➜  ~ pwd
@@ -75,9 +75,10 @@ drwxr-xr-x@  3 name  staff   96 Apr 15 23:40 folder_6
 ```
 ➜  folder_1 cat file_1.txt
 ```
-#### *type &circ; ```+ C``` to  quit*
+#### *press &circ; ```+ C``` to  quit*
 
-### 10. Write something in this file: 
+### 10. Write something in this file + 
+### 11. Save and quit: 
 
 ```
 ➜  folder_1 vim file_1.txt
@@ -93,3 +94,33 @@ World
 ~                                                                                         
 :wq
 ```
+#### *press ```I``` to start editing the file*
+#### *press ```:wq``` to quit*
+
+### 12. To navigate up one directory level:
+
+```
+➜  folder_1 cd ..
+```
+
+### 13. Move any two files to any folder:
+
+```
+➜  folder_1 mv file_1.txt file_2.txt folder_5 
+```
+
+### 14. Copy any two files to any folder:
+
+```
+➜  folder_1 cd folder_5  
+➜  folder_5 cp file_1.txt file_2.txt /Users/name/test_QA/folder_1
+```
+first step - change directory /folder_5, next step - copy files into point directory
+
+### 15. Find a file by name:
+
+```
+➜ folder_5 cd ~
+➜ ~ find test_QA/ -name file_6.txt
+```
+#### *cd ~ you will move in the home directory*
