@@ -94,7 +94,7 @@ World
 ~                                                                                         
 :wq
 ```
-#### *press ```I``` to start editing the file*
+#### *press ```i``` to start editing the file*
 #### *press ```:wq``` to quit*
 
 ### 12. To navigate up one directory level:
@@ -123,4 +123,4 @@ first step - change directory /folder_5, next step - copy files into point direc
 ➜ folder_5 cd ~
 ➜ ~ find test_QA/ -name file_6.txt
 ```
-#### *cd ~ you will move in the home directory*
+#### *```cd ~``` you will move in the home directory*
