@@ -120,7 +120,40 @@ first step - change directory /folder_5, next step - copy files into point direc
 ### 15. Find a file by name:
 
 ```
-➜ folder_5 cd ~
-➜ ~ find test_QA/ -name file_6.txt
+➜  folder_5 cd ~
+➜  ~ find test_QA/ -name file_6.txt
 ```
 #### *```cd ~``` you will move in the home directory*
+
+### 16. Show file content in real time, with 'grep' to find any word
+
+```
+➜  folder_5 cd folder_1
+➜  folder_1 tail -f file_1.txt | grep "Hello"
+```
+#### *```-f``` option causes tail to not stop when end of file is reached, but rather to wait for additional data to be appended to the input*
+
+### 17. Output several first lines from the text file:
+
+```
+➜  folder_1 head -n 2 file_1.txt  
+```
+
+### 18. Output several last lines from the text file:
+
+```
+➜  folder_1 tail -n 2 file_1.txt  
+```
+
+### 19. View content of a large file:
+
+```
+➜  folder_1 cd folder_6
+➜  folder_6 less file_9.txt
+```
+
+### 20. View current date and time:
+
+```
+➜  folder_6 date
+```
