@@ -68,7 +68,7 @@ drwxr-xr-x@  4 name  staff  128 Apr 15 15:05 folder_5
 drwxr-xr-x@  3 name  staff   96 Apr 15 23:40 folder_6
 ```
 #### *```-l```	option, displays entries in a long list format*
-#### *```-a``` 	Lists all files including those that begin with ' . '*
+#### *```-a``` 	lists all files including those that begin with ' . '*
 
 ### 9. Open one of .txt files:
 
@@ -156,4 +156,30 @@ first step - change directory /folder_5, next step - copy files into point direc
 
 ```
 ➜  folder_6 date
+```
+
+### * Write a script that will execute the next steps 3, 4, 5, 6, 7, 8, 13:
+
+#### file ```script_1.sh```
+#### command ```. /Users/name/my_scripts/script_1.sh```
+
+```
+echo "Current directory: $(pwd)"
+
+cd /Users/name/test_QA
+
+echo "New directory: $(pwd)"
+
+mkdir folder_7 folder_8 folder_9 
+
+echo "New folder structure: $(ls -la)" 
+
+mv file_7.txt file_8.txt /Users/name/test_QA/folder_3
+
+echo "New files place: $(ls -la)" 
+
+touch file_6.txt file_7.txt file_8.txt file_9.json file_10.json
+
+echo "New file structure: $(ls -la)"
+
 ```
