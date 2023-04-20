@@ -7,7 +7,7 @@
 ➜  ~ pwd
 /Users/<USER_NAME>
 ```
-#### *the current directory is /name*
+#### *the current directory is /<USER_NAME>*
 ---
 ### 2. Make a new folder:
 
@@ -20,7 +20,7 @@
 ```
 ➜  ~ cd test_QA
 ```
-#### *the current directory changed to /Users/name/test_QA*
+#### *the current directory changed to /Users/<USER_NAME>/test_QA*
 ---
 
 ### 4. Create new folders(three):
@@ -34,7 +34,7 @@
 ```
 ➜  test_QA cd folder_1
 ```
-#### *the current directory changed to /Users/name/test_QA/folder_1*
+#### *the current directory changed to /Users/<USER_NAME>/test_QA/folder_1*
 ---
 
 ### 6. Create five files (three .txt files and two .json files):
@@ -164,7 +164,7 @@ World
 ---
 ### :dizzy: Write a script that will execute the next steps 3, 4, 5, 6, 7, 8, 13:
 
-#### file ```script_1.sh```
+#### file ```[script_1.sh]()```
 #### command ```. /Users/name/my_scripts/script_1.sh```
 
 ```
