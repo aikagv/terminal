@@ -1,6 +1,3 @@
-
-# $${\color{#28B5B1}Homework}$$
-
 ### 1. Check where am I: 
 
 ```
