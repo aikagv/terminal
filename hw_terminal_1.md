@@ -1,3 +1,4 @@
+
 # $${\color{#28B5B1}Homework}$$
 
 ### 1. Check where am I: 
@@ -7,44 +8,47 @@
 /Users/name
 ```
 #### *The current directory is /name*
-
+---
 ### 2. Make a new folder:
 
 ```
 ➜  ~ mkdir test_QA
 ```
-
+---
 ### 3. Go to the created folder:
 
 ```
 ➜  ~ cd test_QA
 ```
 #### *The current directory changed to /Users/name/test_QA*
+---
 
 ### 4. Create new folders(three):
 
 ```
 ➜  test_QA mkdir folder_1 folder_2 folder_3
 ```
+---
 ### 5. Go to any of these folders:
 
 ```
 ➜  test_QA cd folder_1
 ```
 #### *The current directory changed to /Users/name/test_QA/folder_1*
+---
 
 ### 6. Create five files (three .txt files and two .json files):
 
 ```
 ➜  folder_1  touch file_1.txt file_2.txt file_3.txt file_4.json file_5.json
 ```
-
+---
 ### 7. Make new folders(three):
 
 ```
 ➜  folder_1 mkdir folder_4 folder_5 folder_6
 ```
-
+---
 ### 8. Output the list of the current folder:
 
 ```
@@ -69,14 +73,14 @@ drwxr-xr-x@  3 name  staff   96 Apr 15 23:40 folder_6
 ```
 #### *```-l```	option, displays entries in a long list format*
 #### *```-a``` 	lists all files including those that begin with ' . '*
-
+---
 ### 9. Open one of .txt files:
 
 ```
 ➜  folder_1 cat file_1.txt
 ```
 #### *press &circ; ```+ C``` to  quit*
-
+---
 ### 10. Write something in this file + 
 ### 11. Save and quit: 
 
@@ -96,13 +100,13 @@ World
 ```
 #### *press ```i``` to start editing the file*
 #### *press ```:wq``` to quit*
-
+---
 ### 12. To navigate up one directory level:
 
 ```
 ➜  folder_1 cd ..
 ```
-
+---
 ### 13. Move any two files to any folder:
 
 ```
@@ -115,8 +119,8 @@ World
 ➜  folder_1 cd folder_5  
 ➜  folder_5 cp file_1.txt file_2.txt /Users/name/test_QA/folder_1
 ```
-first step - change directory /folder_5, next step - copy files into point directory
-
+#### *first step - change directory /folder_5, next step - copy files into point directory*
+---
 ### 15. Find a file by name:
 
 ```
@@ -124,7 +128,7 @@ first step - change directory /folder_5, next step - copy files into point direc
 ➜  ~ find test_QA/ -name file_6.txt
 ```
 #### *```cd ~``` you will move in the home directory*
-
+---
 ### 16. Show file content in real time, with 'grep' to find any word
 
 ```
@@ -132,33 +136,33 @@ first step - change directory /folder_5, next step - copy files into point direc
 ➜  folder_1 tail -f file_1.txt | grep "Hello"
 ```
 #### *```-f``` option causes tail to not stop when end of file is reached, but rather to wait for additional data to be appended to the input*
-
+---
 ### 17. Output several first lines from the text file:
 
 ```
 ➜  folder_1 head -n 2 file_1.txt  
 ```
-
+---
 ### 18. Output several last lines from the text file:
 
 ```
 ➜  folder_1 tail -n 2 file_1.txt  
 ```
-
+---
 ### 19. View content of a large file:
 
 ```
 ➜  folder_1 cd folder_6
 ➜  folder_6 less file_9.txt
 ```
-
+---
 ### 20. View current date and time:
 
 ```
 ➜  folder_6 date
 ```
-
-### * Write a script that will execute the next steps 3, 4, 5, 6, 7, 8, 13:
+---
+### :dizzy: Write a script that will execute the next steps 3, 4, 5, 6, 7, 8, 13:
 
 #### file ```script_1.sh```
 #### command ```. /Users/name/my_scripts/script_1.sh```
