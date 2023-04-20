@@ -164,7 +164,7 @@ World
 ---
 ### :dizzy: Write a script that will execute the next steps 3, 4, 5, 6, 7, 8, 13:
 
-#### file ```![script_1.sh](/Users/<USER_NAME>/script_1.sh)```
+#### file [script_1.sh](script_1.sh)
 #### command ```. /Users/<USER_NAME>/my_scripts/script_1.sh```
 
 ```
