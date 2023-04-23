@@ -128,3 +128,38 @@ inner_dir_1/tf_4.txt
 ```
 ➜  dir_1 > inner_dir_1/tf_4.txt  
 ```
+*or*
+```
+➜  dir_1 cat /dev/null > inner_dir_1/tf_4.txt
+```
+---
+### 21. Find the path to files that have "tf" in their names:
+```
+➜  dir_1 find . -type f -name '*tf*'
+./tf_1.txt
+./tf_2.txt
+./inner_dir_1/tf_3.txt
+./inner_dir_1/tf_5.txt
+./inner_dir_1/tf_4.txt
+```
+---
+### 22. Find the path to files that have "tf" in their names and letters in any case:
+```
+➜  dir_1 find . -type f -iname '*tf*'
+```
+---
+### 23. Find lines files where there are combinations of letters "sec" in the current folder:
+```
+➜ dir_1 grep  -n sec *
+```
+---
+### 24. Find lines in files where there are combinations of letters "sec" in any case in the current folder:
+```
+➜ dir_1 grep -i sec *
+```
+---
+### 25. Find lines in files where there is only a combination of letters "sec" in the current folder:
+```
+➜ dir_1 grep -w sec *
+```
+
