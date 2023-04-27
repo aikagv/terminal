@@ -1,26 +1,26 @@
 ###  1. Make a folder dir_1:
-```
+```bash
 ➜  hw_terminal mkdir dir_1 
 ```
 ---
 ### 2. Go to the folder dir_1:
-```
+```bash
 ➜  dir_1 cd inner_dir_1
 ```
 ---
 ### 3. Create a folder inner_dir_1:
-```
+```bash
 ➜  dir_1 mkdir inner_dir_1
 ```
 ---
 ### 4. Check where are you?:
-```
+```bash
 ➜  dir_1 pwd
 /Users/<USER_NAME>/hw_terminal/dir_1
 ```
 ---
 ### 5. Create an empty text file tf_1.txt, in the folder dir_1:
-```
+```bash
 ➜  dir_1 touch tf_1.txt 
 ```
 ---
@@ -28,7 +28,7 @@
 - the first 1
 - the second 2
 - the third 3
-```
+```bash
 ➜  dir_1 cat > tf_2.txt
 the first
 the second 2
@@ -36,12 +36,12 @@ the third3%
 ```
 ---
 ### 7. Go to the folder inner_dir_1:
-```
+```bash
 ➜  dir_1 cd inner_dir_1/ 
 ```
 ---
 ### 8. Use 'cat' to create a text file tf_3.txt with any lines:
-```
+```bash
 ➜  inner_dir_1 cat > tf_3.txt
 The commands listed below
 are some of the most useful and
@@ -49,50 +49,50 @@ most frequently used Linux commands%
 ```
 ---
 ### 9. Use 'cat' to add a row "the second 2" in the text file tf_3.txt:
-```
+```bash
 ➜  inner_dir_1 cat >> tf_3.txt
 "the second"2% 
 ```
 ---
 ### 10. Use 'cat' to add a row "the sec 2" in the text file tf_3.txt:
-```
+```bash
 "the sec 2"% 
 ```
 ---
 ### 11. Use 'cat' to add a row "the sec 3" in the text file tf_2.txt:
-```
+```bash
 ➜  inner_dir_1 cd ..                                          
 ➜  dir_1 cat >> tf_2.txt
 "the sec"3% 
 ```
 ---
 ### 12. Use 'cat' to add a row "the SeCoNd 2" in the text file tf_3.txt:
-```
+```bash
 ➜  dir_1 cd inner_dir_1/ 
 ➜  inner_dir_1 cat >> tf_3.txt
 “the SeCoNd 2”%
 ```
 ---
 ### 13. Use 'cat' to add a row "the seConD 2" in the text file tf_2.txt:
-```
+```bash
 ➜  inner_dir_1 cd ../           
 ➜  dir_1 cat >> tf_2.txt
 "the seConD 2"%
 ```
 ---
 ###  14. Create a text file tf_4.txt in which will be 15 rows:
-```
+```bash
 ➜  inner_dir_1 seq 15 | cat > tf_4.txt
 ➜  inner_dir_1 cat -n tf_4.txt or ➜  inner_dir_1 cat tf_4.txt | more
 ```
 ---
 ### 15. Create a text file tf_5.txt in which will be 13 rows:
-```
+```bash
 ➜  inner_dir_1 seq 13 | cat > tf_5.txt
 ```
 ---
 ### 16. Output the list of all the files in the folder:
-```
+```bash
 ➜  inner_dir_1 ls -la
 total 24
 drwxr-xr-x@ 5 <USER_NAME>  staff  160 Apr 21 02:03 .
@@ -103,12 +103,12 @@ drwxr-xr-x@ 5 <USER_NAME>  staff  160 Apr 21 02:03 ..
 ```
 ---
 ###  17. Go out of the folder inner_dir_1:
-```
+```bash
 ➜  inner_dir_1 cd ../ 
 ```
 ---
 ### 18. Output the contents of the file tf_3.txt to the terminal:
-```
+```bash
 ➜  dir_1 cat inner_dir_1/tf_3.txt      
 The commands listed below
 are some of the most useful and
@@ -119,22 +119,22 @@ most frequently used Linux commands
 ```
 ---
 ### 19. Find the file tf_4.txt path:
-```
+```bash
 ➜  dir_1 find inner_dir_1 -name tf_4.txt                
 inner_dir_1/tf_4.txt
 ```
 ---
 ### 20. Clear the file tf_4.txt from the contents without deleting the file itself:
-```
+```bash
 ➜  dir_1 > inner_dir_1/tf_4.txt  
 ```
 *or*
-```
+```bash
 ➜  dir_1 cat /dev/null > inner_dir_1/tf_4.txt
 ```
 ---
 ### 21. Find the path to files that have "tf" in their names:
-```
+```bash
 ➜  dir_1 find . -type f -name '*tf*'
 ./tf_1.txt
 ./tf_2.txt
@@ -144,22 +144,22 @@ inner_dir_1/tf_4.txt
 ```
 ---
 ### 22. Find the path to files that have "tf" in their names and letters in any case:
-```
+```bash
 ➜  dir_1 find . -type f -iname '*tf*'
 ```
 ---
 ### 23. Find lines files where there are combinations of letters "sec" in the current folder:
-```
+```bash
 ➜ dir_1 grep  -n sec *
 ```
 ---
 ### 24. Find lines in files where there are combinations of letters "sec" in any case in the current folder:
-```
+```bash
 ➜ dir_1 grep -i sec *
 ```
 ---
 ### 25. Find lines in files where there is only a combination of letters "sec" in the current folder:
-```
+```bash
 ➜ dir_1 grep -w sec *
 ```
 
