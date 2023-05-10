@@ -65,7 +65,6 @@ drwxr-xr-x@  3 <USER_NAME>  staff   96 Apr 15 23:40 folder_6
 ```bash
 ➜  folder_1 cat file_1.txt
 ```
-#### *press &circ; ```+ C``` to  quit*
 ---
 ### 10. Write something in this file + 
 ### 11. Save and quit: 
@@ -77,7 +76,7 @@ hello
 word
 WORLD
 World
-~                                                                                       
+~                                                                                     
 ~                                                                                         
 ~                                                                                       
 ~                                                                                         
@@ -140,6 +139,7 @@ World
 ### :dizzy: Write a script that will execute the next steps 3, 4, 5, 6, 7, 8, 13:
 #### file [script_1.sh](script_1.sh)
 #### command ```. /Users/<USER_NAME>/my_scripts/script_1.sh```
+
 ```bash
 echo "Current directory: $(pwd)"
 
