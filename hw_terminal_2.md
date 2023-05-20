@@ -95,10 +95,7 @@ seq 15 | cat > tf_4.txt
 cat -n tf_4.txt
 ```
 #### *the ```-n``` option tells 'cat' to add line numbers to each line of the file as output*
-#### *or:*
-```
-cat -n tf_4.txt | wc -l
-```
+
 ---
 ### 15. Create a text file tf_5.txt in which will be 13 rows:
 ```bash
