@@ -59,6 +59,7 @@ cat >> tf_3.txt
 ---
 ### 10. Use 'cat' to add a row 'the sec 2' in the text file tf_3.txt:
 ```bash
+cat >> tf_3.txt
 'the sec 2' 
 ```
 ---
