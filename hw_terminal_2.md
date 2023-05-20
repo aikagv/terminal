@@ -230,7 +230,7 @@ grep -rlw sec | xargs -I{} cp {} inner_dir_1
 ___
 ### 38. One string command. Find all the strings containing "sec" in all files. Print them all to a new file:
 ```bash
-grep sec * > new_dir
+grep sec * > new_file.txt
 ```
 ___
 ### 39. One string command: Delete all text file with strings containig word "sec":
