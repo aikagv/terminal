@@ -212,15 +212,10 @@ head -4 tf_2.txt
 ---
 ### 35. One string command. Create a directory and not empty file:
 ```bash
-mkdir <new_dir> && echo "Some text" > <new_file>
+mkdir new_dir && echo "Some text" > new_file
 ```
 #### *create a file and a directory in the current directory*
 #### *the ```&&``` symbol on the command line is used to chain commands together and execute the next command only if the previous command succeeded*
-#### *or*
-```bash
-mkdir <new_dir> && echo "Some text" > <new_dir>/<new_file> 
-```
-#### *create a new file in a new directory*
 ---
 ### 36.One string command. Move the text files containing word "sec" in any other directory:
 ```bash
@@ -235,7 +230,7 @@ grep -rlw sec | xargs -I{} cp {} inner_dir_1
 ___
 ### 38. One string command. Find all the strings containing "sec" in all files. Print them all to a new file:
 ```bash
-grep sec * | cat > <new_dir>
+grep sec * > new_dir
 ```
 ___
 ### 39. One string command: Delete all text file with strings containig word "sec":
