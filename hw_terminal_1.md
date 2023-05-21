@@ -79,7 +79,7 @@ cp file_1.txt file_2.txt /Users/<user_name>/<new_folder>/folder_1
 ### 15. Find a file by name:
 ```bash
 cd ~
-find new_folder/ -name file_6.txt
+find . -name file_6.txt
 ```
 #### *```cd ~``` you will move to the home directory*
 ---

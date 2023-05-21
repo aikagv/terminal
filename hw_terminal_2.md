@@ -5,7 +5,7 @@ mkdir dir_1
 ---
 ### 2. Go to the folder dir_1:
 ```bash
-cd inner_dir_1
+cd dir_1
 ```
 ---
 ### 3. Create a folder inner_dir_1:
@@ -88,7 +88,7 @@ cat >> tf_2.txt
 ---
 ###  14. Create a text file tf_4.txt in which will be 15 rows:
 ```bash
-seq 15 | cat > tf_4.txt
+seq 15 > tf_4.txt
 ```
 ### *the command to check the result*
 ```
@@ -99,7 +99,7 @@ cat -n tf_4.txt
 ---
 ### 15. Create a text file tf_5.txt in which will be 13 rows:
 ```bash
-seq 13 | cat > tf_5.txt
+seq 13 > tf_5.txt
 ```
 ---
 ### 16. Output the list of all the files in the folder:
@@ -189,7 +189,7 @@ grep -l second * | xargs realpath
 ```
 #### *the ```xargs realpath``` command is used to convert the relative file paths given by the previous command to absolute paths*
 ---
-### 31. Find all strings in all thefiles where there isn't combination "second":
+### 31. Find all strings in all the files where there isn't combination "second":
 ```bash
 grep -vr  second *
 ```
@@ -212,25 +212,25 @@ head -4 tf_2.txt
 ---
 ### 35. One string command. Create a directory and not empty file:
 ```bash
-mkdir new_dir && echo "Some text" > new_file
+mkdir new_dir && echo 'Some text' > new_file.txt
 ```
 #### *create a file and a directory in the current directory*
 #### *the ```&&``` symbol on the command line is used to chain commands together and execute the next command only if the previous command succeeded*
 ---
-### 36.One string command. Move the text files containing word "sec" in any other directory:
+### 36. One string command. Move the text files containing word "sec" in any other directory:
 ```bash
 grep -rlw sec | xargs -I{} mv {} inner_dir_1
 ```
 #### *when executing the ```xargs``` command with the ```-I{}``` option, each occurrence of the ```{}``` placeholder in the command will be replaced by the found filename*
 ___
-### 37.One string command. Copy the text files containing word "sec" in any other directory:
+### 37. One string command. Copy the text files containing word "sec" in any other directory:
 ```bash
 grep -rlw sec | xargs -I{} cp {} inner_dir_1
 ```
 ___
 ### 38. One string command. Find all the strings containing "sec" in all files. Print them all to a new file:
 ```bash
-grep sec * > new_file.txt
+grep -rh sec * > new_file.txt
 ```
 ___
 ### 39. One string command: Delete all text file with strings containig word "sec":
