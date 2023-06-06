@@ -71,38 +71,33 @@ mv file_1.txt file_2.txt folder_5
 ```
 ### 14. Copy any two files to any folder:
 ```bash
-cd folder_5  
-cp file_1.txt file_2.txt /Users/<user_name>/<new_folder>/folder_1
+cp file_1.txt file_2.txt folder_4
 ```
 #### *first step - change directory /folder_5, next step - copy files into point directory*
 ---
 ### 15. Find a file by name:
 ```bash
-cd ~
 find . -name file_6.txt
 ```
-#### *```cd ~``` you will move to the home directory*
 ---
 ### 16. Show file content in real time, with 'grep' to find any word
 ```bash
-cd folder_1
-tail -f file_1.txt | grep "Hello"
+tail -f file_1.txt
 ```
 #### *```-f``` option causes tail to not stop when end of file is reached, but rather to wait for additional data to be appended to the input*
 ---
 ### 17. Output several first lines from the text file:
 ```bash
-head -n 2 file_1.txt  
+head -2 file_1.txt  
 ```
 ---
 ### 18. Output several last lines from the text file:
 ```bash
-tail -n 2 file_1.txt  
+tail -2 file_1.txt  
 ```
 ---
 ### 19. View content of a large file:
 ```bash
-cd folder_6
 less file_9.txt
 ```
 ---
@@ -111,6 +106,10 @@ less file_9.txt
 date
 ```
 ---
+### Send http request to server:
+```bash
+curl http://162.55.220.72:5005/terminal-hw-request
+```
 ### :dizzy: Write a script that will execute the next steps 3, 4, 5, 6, 7, 8, 13:
 #### file [script_1.sh](script_1.sh)
 #### command ```. /Users/<user_name>/my_scripts/script_1.sh```

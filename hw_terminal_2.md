@@ -44,9 +44,10 @@ cd inner_dir_1/
 ### 8. Use 'cat' to create a text file tf_3.txt with any lines:
 ```bash
 cat > tf_3.txt
-'The commands listed below
- are some of the most useful and
- most frequently used Linux commands'
+'test2
+ test3
+ test 4
+ TST5'
 ^C  
 ```
 ---
@@ -64,23 +65,20 @@ cat >> tf_3.txt
 ```
 ---
 ### 11. Use 'cat' to add a row 'the sec 3' in the text file tf_2.txt:
-```bash
-cd ..                                          
+```bash                                       
 cat >> tf_2.txt
 'the sec'
 ```
 ---
 ### 12. Use 'cat' to add a row 'the SeCoNd 2' in the text file tf_3.txt:
 ```bash
-cd inner_dir_1/ 
 cat >> tf_3.txt
 'the SeCoNd 2'
 ^C
 ```
 ---
 ### 13. Use 'cat' to add a row 'the seConD 2' in the text file tf_2.txt:
-```bash
-cd ../           
+```bash          
 cat >> tf_2.txt
 'the seConD 2'
 ^C
@@ -90,12 +88,6 @@ cat >> tf_2.txt
 ```bash
 seq 15 > tf_4.txt
 ```
-### *the command to check the result*
-```
-cat -n tf_4.txt
-```
-#### *the ```-n``` option tells 'cat' to add line numbers to each line of the file as output*
-
 ---
 ### 15. Create a text file tf_5.txt in which will be 13 rows:
 ```bash
@@ -126,18 +118,12 @@ find . -name tf_4.txt
 ```bash
 cat /dev/null > tf_4.txt 
 ```
-*or*
-```bash
-> tf_4.txt
-^C 
-```
 ---
 ### 21. Find the path to the files that have "tf" in their names:
 ```bash
 find . -type f -name '*tf*'
 ```
 #### *```-type f``` this flag indicates the type of the object we are looking for 'file'*
-#### *so the 'find' command will only look for files*
 ---
 ### 22. Find the path to the files that have "tf" in their names and letters in any case:
 ```bash
@@ -147,57 +133,56 @@ find . -type f -iname '*tf*'
 ---
 ### 23. Find strings the files where there are combinations of letters "sec" in the current folder:
 ```bash
-grep -n sec *
+grep -n 'sec' *
 ```
 #### ```'*'``` *this is a wildcard metacharacter*
 #### *this way the search will be performed on all the files and directories in the current folder, including hidden files and folders*
 ---
 ### 24. Find strings in the files where there is a combination of letters "sec" in any case in the current folder:
 ```bash
-grep -ni sec *
+grep -ni 'sec' *
 ```
 ---
 ### 25. Find strings in the files where there is only a combination of letters "sec" in the current folder:
 ```bash
-grep -w sec *
+grep -w 'sec' *
 ```
-#### *```-w``` this option tells 'grep' to only look for the full word 'sec' and not consider it as a part of another word*
+#### *```-w``` this option tells 'grep' to look for only the full word 'sec' and not consider it as a part of another word*
 ---
 ###  26. Find strings in the files where there is only a combination of letters "sec" in any case in the current folder:
 ```bash
-grep -wi sec *
+grep -wi 'sec' *
 ```
 ---
 ### 27. Find strings in the files where there is a combination of letters "second" in the current folder:
 ```bash
-grep second *
+grep 'second' *
 ```
 ---
 ### 28. Find strings in the files where there is a combination of letters "second" in any case in the current folder:
 ```bash
-grep -i second *
+grep -i 'second' *
 ```
 ---
 ### 29. Find strings in files where there is a combination of letters “second” in all the folders below a level:
 ```bash
-grep -r second *
+grep -r 'second'
 ```
 ---
 ### 30. Find only the path and the file name containing strings with 'second' in the current directory:
 ```bash
-grep -l second * | xargs realpath
+grep -rl 'second' . 
 ```
-#### *the ```xargs realpath``` command is used to convert the relative file paths given by the previous command to absolute paths*
 ---
 ### 31. Find all strings in all the files where there isn't combination "second":
 ```bash
-grep -vr  second *
+grep -vr 'second'
 ```
 #### *the ```-v``` option is used to invert matches, i.e. output only lines that do not contain the searched string*
 ---
 ### 32. Find only the path and the file name doesn't containing strings with 'second':
 ```bash
-grep -rlv second | xargs realpath 
+grep -rlv 'second'
 ```
 ---
 ### 33. Print the last four strings of any text file:
@@ -219,23 +204,23 @@ mkdir new_dir && echo 'Some text' > new_file.txt
 ---
 ### 36. One string command. Move the text files containing word "sec" in any other directory:
 ```bash
-grep -rlw sec | xargs -I{} mv {} inner_dir_1
+grep -rlw 'sec' | xargs -I{} mv {} inner_dir_1
 ```
 #### *when executing the ```xargs``` command with the ```-I{}``` option, each occurrence of the ```{}``` placeholder in the command will be replaced by the found filename*
 ___
 ### 37. One string command. Copy the text files containing word "sec" in any other directory:
 ```bash
-grep -rlw sec | xargs -I{} cp {} inner_dir_1
+grep -rlw 'sec' | xargs -I{} cp {} inner_dir_1
 ```
 ___
 ### 38. One string command. Find all the strings containing "sec" in all files. Print them all to a new file:
 ```bash
-grep -rh sec * > new_file.txt
+grep -r 'sec' * > new_file.txt
 ```
 ___
 ### 39. One string command: Delete all text file with strings containig word "sec":
 ```bash
-grep -rlw sec | xargs rm -rf
+grep -rlw 'sec' | xargs rm -rf
 ```
 ___
 ### 40. Print "Good job!"
